@@ -77,11 +77,13 @@ html += /* html */`
         hover:underline-offset-4
         hover:decoration-blue-400
         hover:fill-blue-400
-        gap-1
+        gap-0           sm:gap-1
+        text-xs         sm:text-sm      md:text-base
+        leading-4       sm:leading-6
         ">
 
             <slot></slot>
-            <div class="w-4 h-6 m-auto flex">
+            <div class="w-4 h-4 sm:h-6 m-auto flex">
                 <slot name="icon">
                     <svg id="chevron" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"/></svg>
                 </slot>
